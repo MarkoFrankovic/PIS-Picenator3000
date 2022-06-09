@@ -18,35 +18,34 @@ session = Session()
 
 db = sqlalchemy(app)
 
-Jaeger = db.get_all(Pjesme_Jaeger)
-Bambus = db.get_all(Pjesme_Bambus)
-Voda = db.get_all(Pjesme_Voda)
-Gin = db.get_all(Pjesme_Gin)
-Travarica = db.get_all(Pjesme_Travarica)
-Vodka = db.get_all(Pjesme_Vodka)
-Jack = db.get_all(Pjesme_Jack)
-Merlot = db.get_all(Pjesme_Merlot)
-Stock = db.get_all(Pjesme_Stock)
-
 @app.route('/getanje/<pice>', methods=['GET'])
 def fetch(pice):
     if pice == "bambus":
+            Bambus = db.get_all(Pjesme_Bambus)
             return Bambus.select().order_by(Bambus.ocjena.desc())
     elif pice == "jaeger":
+            Jaeger = db.get_all(Pjesme_Jaeger)
             return Jaeger.select().order_by(Bambus.ocjena.desc())
     elif pice == "voda":
+            Voda = db.get_all(Pjesme_Voda)
             return Voda.select().order_by(Bambus.ocjena.desc())
     elif pice == "gin":
+            Gin = db.get_all(Pjesme_Gin)
             return Gin.select().order_by(Bambus.ocjena.desc())
     elif pice == "travarica":
+            Travarica = db.get_all(Pjesme_Travarica)
             return Travarica.select().order_by(Bambus.ocjena.desc())
     elif pice == "vodka":
+            Vodka = db.get_all(Pjesme_Vodka)
             return Vodka.select().order_by(Bambus.ocjena.desc())
     elif pice == "jack":
+            Jack = db.get_all(Pjesme_Jack)
             return Jack.select().order_by(Bambus.ocjena.desc())    
     elif pice == "merlot":
+            Merlot = db.get_all(Pjesme_Merlot)
             return Merlot.select().order_by(Bambus.ocjena.desc())
     elif pice == "stock":
+            Stock = db.get_all(Pjesme_Stock)
             return Stock.select().order_by(Bambus.ocjena.desc())
 
 @app.route('/add', methods=['POST'])
