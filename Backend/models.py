@@ -6,9 +6,7 @@ Base = declarative_base()
 
 class Bambus(Base):
     """Bambus pice"""
-
     __tablename__ = "bambus"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)
@@ -16,9 +14,7 @@ class Bambus(Base):
 
 class Jaeger(Base):
     """Jaeger pice"""
-
     __tablename__ = "jaeger"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)
@@ -26,9 +22,7 @@ class Jaeger(Base):
 
 class Voda(Base):
     """Voda pice"""
-
     __tablename__ = "voda"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)
@@ -36,9 +30,7 @@ class Voda(Base):
 
 class Gin(Base):
     """Gin pice"""
-
     __tablename__ = "gin"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)
@@ -46,9 +38,7 @@ class Gin(Base):
 
 class Travarica(Base):
     """Travarica pice"""
-
     __tablename__ = "travarica"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)
@@ -56,9 +46,7 @@ class Travarica(Base):
 
 class Vodka(Base):
     """Vodka pice"""
-
     __tablename__ = "vodka"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)
@@ -66,9 +54,7 @@ class Vodka(Base):
 
 class Jack(Base):
     """Jack pice"""
-
     __tablename__ = "jack"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)
@@ -76,9 +62,7 @@ class Jack(Base):
 
 class Merlot(Base):
     """Merlot pice"""
-
     __tablename__ = "merlot"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)
@@ -86,9 +70,7 @@ class Merlot(Base):
 
 class Stock(Base):
     """Stock pice"""
-
     __tablename__ = "stock"
-
     id = Column(Integer, primary_key=True, autoincrement="auto")
     ime = Column(String(255), unique=True, nullable=False)
     ocjena = Column(Integer, nullable=False)

@@ -18,13 +18,85 @@ session = DBSession()
 
 db = SQLAlchemy(app)
 
+class Bambus(db.Model):
+    """Bambus pice"""
+    __tablename__ = "bambus"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
+class Jaeger(db.Model):
+    """Jaeger pice"""
+    __tablename__ = "jaeger"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
+class Voda(db.Model):
+    """Voda pice"""
+    __tablename__ = "voda"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
+class Gin(db.Model):
+    """Gin pice"""
+    __tablename__ = "gin"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
+class Travarica(db.Model):
+    """Travarica pice"""
+    __tablename__ = "travarica"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
+class Vodka(db.Model):
+    """Vodka pice"""
+    __tablename__ = "vodka"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
+class Jack(db.Model):
+    """Jack pice"""
+    __tablename__ = "jack"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
+class Merlot(db.Model):
+    """Merlot pice"""
+    __tablename__ = "merlot"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
+class Stock(db.Model):
+    """Stock pice"""
+    __tablename__ = "stock"
+    id = db.Column(db.Integer, primary_key=True, autoincrement="auto")
+    ime = db.Column(db.String(255), unique=True, nullable=False)
+    ocjena = db.Column(db.Integer, nullable=False)
+    url = db.Column(db.Text)
+
 @app.route('/getanje/<pice>', methods=['GET'])
 def fetch(pice):
     if pice == "bambus":
-            Bambus = databaze.get_all(Pjesme_Bambus)
+            Bambus = db.get_all(Pjesme_Bambus)
             return Bambus.select().order_by(Bambus.ocjena.desc())
     elif pice == "jaeger":
-            Jaeger = databaze.get_all(Pjesme_Jaeger)
+            Jaeger = db.session.get_all(Pjesme_Jaeger)
             return Jaeger.select().order_by(Jaeger.ocjena.desc())
     elif pice == "voda":
             Voda = databaze.get_all(Pjesme_Voda)
@@ -75,12 +147,10 @@ def add():
    elif pice == "Stock":
       Stock.insert_one(data)
 
-
 @app.route('/remove/<cat_id>', methods=['DELETE'])
 def remove(cat_id):
     database.delete_instance(Cats, id=cat_id)
     return json.dumps("Deleted"), 200
-
 
 @app.route('/edit/<cat_id>', methods=['PATCH'])
 def edit(cat_id):
@@ -104,8 +174,6 @@ def edit(cat_id):
     elif (pice == "Merlot"):
       Merlot.update_many(myquery, newvalues)
     
-    
-
 if __name__ == '__main__':
    app.run(host="0.0.0.0")
    
