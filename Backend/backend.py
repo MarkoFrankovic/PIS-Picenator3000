@@ -13,7 +13,7 @@ engine = create_engine(
     'mysql+pymysql://root:password@host:3306/Databasa',
     echo=True
 )
-Session = sessionmaker(bind=engine)
+Session = sessionmaker('mysql:///Databaza.db')
 session = Session()
 
 db = sqlalchemy(app)
