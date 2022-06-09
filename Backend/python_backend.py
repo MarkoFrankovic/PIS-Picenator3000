@@ -110,8 +110,7 @@ def delete_pjesme():
    data = request.get_json()
    print(json_util.dumps(data))
    mydict = data
-   myquery = { "url":  data["url"]}
-   newvalues = { "$set": { "ocjena": data["ocjena"] } }
+   myquery = { "ime":  data["ime"]}
    pice = data.pop("pice")
    
    if (pice == "Bambus"):
@@ -133,9 +132,6 @@ def delete_pjesme():
    elif (pice == "Merlot"):
       Merlot.delete_many(myquery)
    return data
-
-
-
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0")
