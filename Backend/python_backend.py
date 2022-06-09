@@ -23,7 +23,7 @@ Jack = mydb["Pjesme_Jack"]
 Merlot = mydb["Pjesme_Merlot"]
 Stock = mydb["Pjesme_Stock"]
 
-#getanje sortiranih pića
+#READ CRUD
 @app.route('/getanje/<pice>')
 def getanje(pice):
       if pice == "bambus":
@@ -45,7 +45,7 @@ def getanje(pice):
       elif pice == "stock":
          return jsonify(list(Stock.find({},{ "_id": 0, "ime": 1, "ocjena": 1 , "url": 1}).sort("ocjena",-1)))
 
-#ruta za dodavanje u databazu
+#ADD CRUD
 @app.route('/upis', methods=['POST'])
 def upis():
    data = request.get_json()
@@ -74,7 +74,7 @@ def upis():
       Stock.insert_one(data)
    return data
 
-#ruta za izmjenu podataka u databazi
+#UPDATE CRUD
 @app.route('/izmjena', methods=['PATCH'])
 def izmjena_pica():
    data = request.get_json()
@@ -103,6 +103,39 @@ def izmjena_pica():
    elif (pice == "Merlot"):
       Merlot.update_many(myquery, newvalues)
    return data
+
+#DELETE CRUD
+@app.route('/delete', methods=['DELETE'])
+def delete_pjesme():
+   data = request.get_json()
+   print(json_util.dumps(data))
+   mydict = data
+   myquery = { "url":  data["url"]}
+   newvalues = { "$set": { "ocjena": data["ocjena"] } }
+   pice = data.pop("pice")
+   
+   if (pice == "Bambus"):
+      Bambus.delete_many(myquery)
+   elif (pice == "Jaeger"):
+      Jaeger.delete_many(myquery)
+   elif (pice == "Voda"):
+      Voda.delete_many(myquery)
+   elif (pice == "Vodka"):
+      Vodka.delete_many(myquery)
+   elif (pice == "Stock"):
+      Stock.delete_many(myquery)
+   elif (pice == "Gin"):
+      Gin.delete_many(myquery)
+   elif (pice == "Travarica"):
+      Travarica.delete_many(myquery)
+   elif (pice == "Jack"):
+      Jack.delete_many(myquery)
+   elif (pice == "Merlot"):
+      Merlot.delete_many(myquery)
+   return data
+
+
+
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0")
