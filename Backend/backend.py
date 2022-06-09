@@ -1,62 +1,79 @@
 from flask import Flask,jsonify,request
 from flask_cors import CORS, cross_origin
+from flask_sqlalchemy import SQLAlchemy
 import bson.json_util as json_util
-import sqlalchemy
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker,declarative_base
 app = Flask(__name__)
 cors = CORS(app,resources = {r"/*":{"origins":"*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['SQLALCHEMY_DATABAZE_URI'] = 'mysql:///Databaza.db'
 
-engine = create_engine('mysql+pymysql://root:password@host:3306/Databasa')
+engine = create_engine('mysql+pymysql://root:password@localhost/Databasa')
 Base = declarative_base()
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-db = sqlalchemy(app)
+db = SQLAlchemy(app)
 
 @app.route('/getanje/<pice>', methods=['GET'])
 def fetch(pice):
     if pice == "bambus":
-            Bambus = db.get_all(Pjesme_Bambus)
+            Bambus = databaze.get_all(Pjesme_Bambus)
             return Bambus.select().order_by(Bambus.ocjena.desc())
     elif pice == "jaeger":
-            Jaeger = db.get_all(Pjesme_Jaeger)
+            Jaeger = databaze.get_all(Pjesme_Jaeger)
             return Jaeger.select().order_by(Jaeger.ocjena.desc())
     elif pice == "voda":
-            Voda = db.get_all(Pjesme_Voda)
+            Voda = databaze.get_all(Pjesme_Voda)
             return Voda.select().order_by(Voda.ocjena.desc())
     elif pice == "gin":
-            Gin = db.get_all(Pjesme_Gin)
+            Gin = databaze.get_all(Pjesme_Gin)
             return Gin.select().order_by(Gin.ocjena.desc())
     elif pice == "travarica":
-            Travarica = db.get_all(Pjesme_Travarica)
+            Travarica = databaze.get_all(Pjesme_Travarica)
             return Travarica.select().order_by(Travarica.ocjena.desc())
     elif pice == "vodka":
-            Vodka = db.get_all(Pjesme_Vodka)
+            Vodka = databaze.get_all(Pjesme_Vodka)
             return Vodka.select().order_by(Vodka.ocjena.desc())
     elif pice == "jack":
-            Jack = db.get_all(Pjesme_Jack)
+            Jack = databaze.get_all(Pjesme_Jack)
             return Jack.select().order_by(Jack.ocjena.desc())    
     elif pice == "merlot":
-            Merlot = db.get_all(Pjesme_Merlot)
+            Merlot = databaze.get_all(Pjesme_Merlot)
             return Merlot.select().order_by(Merlot.ocjena.desc())
     elif pice == "stock":
-            Stock = db.get_all(Pjesme_Stock)
+            Stock = databaze.get_all(Pjesme_Stock)
             return Stock.select().order_by(Stock.ocjena.desc())
 
 @app.route('/add', methods=['POST'])
 def add():
-    data = request.get_json()
-    name = data['name']
-    price = data['price']
-    breed = data['breed']
-
-    database.add_instance(Cats, name=name, price=price, breed=breed)
-    return json.dumps("Added"), 200
+   data = request.get_json()
+   print(json_util.dumps(data))
+   mydict = data
+   pice = data.pop("pice")
+   data["ocjena"] = int(data["ocjena"])
+   
+   if pice == "Jaeger":
+      Jaeger.insert_one(data)
+   elif pice == "Bambus":
+      Bambus.insert_one(data)
+   elif pice == "Voda":
+      Voda.insert_one(data)
+   elif pice == "Gin":
+      Gin.insert_one(data)
+   elif pice == "Travarica":
+      Travarica.insert_one(data)
+   elif pice == "Vodka":
+      Vodka.insert_one(data)
+   elif pice == "Jack":
+      Jack.insert_one(data)
+   elif pice == "Merlot":
+      Merlot.insert_one(data)
+   elif pice == "Stock":
+      Stock.insert_one(data)
 
 
 @app.route('/remove/<cat_id>', methods=['DELETE'])
