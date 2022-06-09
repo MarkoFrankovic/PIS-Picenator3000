@@ -5,6 +5,8 @@ Ponuđeno je nekoliko alkoholnih pića. Pritiskom na jedan od njih pokreće se l
 
 #How to start
 
+Databaza ne dolazi sa podatcima. Podatci se nalaze u Pjesme_JSON folderu te se dodaju pomoću add data funkcije u MongoDb Compassu.
+
 1.create docker bridged network
 
 ```docker network create veza```
