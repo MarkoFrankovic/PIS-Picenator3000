@@ -24,7 +24,7 @@ Jack = mydb["Pjesme_Jack"]
 Merlot = mydb["Pjesme_Merlot"]
 Stock = mydb["Pjesme_Stock"]
 
-Komentari = mydb2["Komentari_za_ocjenu"]
+Komentari = mydb2["Komentari"]
 
 #READ CRUD
 @app.route('/getanje/<pice>')
