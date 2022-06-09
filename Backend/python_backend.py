@@ -7,8 +7,7 @@ cors = CORS(app,resources = {r"/*":{"origins":"*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 #spajanje na bazu
-myclient = pymongo.MongoClient(
-    "mongodb+srv://Korisnik:korisnik@databaza.tip3k.mongodb.net/Databaza?retryWrites=true&w=majority")
+myclient = pymongo.MongoClient("localhost", 27017, maxPoolSize=50)
 
 #izbor databaze
 mydb = myclient["Pjesme"]
