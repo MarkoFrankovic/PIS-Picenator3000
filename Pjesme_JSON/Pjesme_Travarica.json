@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6274333c18571f1d646ac84a"
+  },
+  "ime": "Alfa Time Band - Biska",
+  "url": "https://www.youtube.com/watch?v=lCg5oDt8cjk",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "627527af142562649ab71905"
+  },
+  "ime": "Bora Drljača - Otišla je Danijela",
+  "url": "https://www.youtube.com/watch?v=gcA97NAkJkY",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "627527ce142562649ab71906"
+  },
+  "ime": "Bora Drljača - Prodaj majko Golfa dizelaša",
+  "url": "https://www.youtube.com/results?search_query=Bora+Drlja%C4%8Da+-+Prodaj+majko+Golfa+dizela%C5%A1a",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "627527dd142562649ab71907"
+  },
+  "ime": "Haris Đinović - I Tebe Sam Sit Kafano",
+  "url": "https://www.youtube.com/watch?v=L_YMTgnSOhc",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "627527fd142562649ab71908"
+  },
+  "ime": "Lepa Brena - Kolovođa",
+  "url": "https://www.youtube.com/watch?v=AtcyMyDlXrQ",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "62752810142562649ab71909"
+  },
+  "ime": "Lepa Brena - Mile voli disko",
+  "url": "https://www.youtube.com/watch?v=b88F8J5g1Kc",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "6275283a142562649ab7190a"
+  },
+  "ime": "Miroslav Ilić - Polomiću ćaše od kristala",
+  "url": "https://www.youtube.com/watch?v=qDHNUiXh4sA",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627528c9142562649ab7190b"
+  },
+  "ime": "Mitar Mirić - Ne može nam niko ništa",
+  "url": "https://www.youtube.com/watch?v=f46LkPDypSY",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "627528f0142562649ab7190c"
+  },
+  "ime": "Sinan Sakić - Pijem na ex",
+  "url": "https://www.youtube.com/watch?v=ckkg_1Q0394",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "62752908142562649ab7190d"
+  },
+  "ime": "Viki Miljković - Nikom nije lepše nego nama",
+  "url": "https://www.youtube.com/watch?v=2V6wsrVVdc4",
+  "ocjena": 5
+}]

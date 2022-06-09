@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6273e95136692510361bbe18"
+  },
+  "ime": "Dara Bubamara - Zidovi",
+  "url": "https://www.youtube.com/watch?v=9g5CEx-A6Ao",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6274318918571f1d646ac83f"
+  },
+  "ime": "Dragana Mirković - Poslednje veće",
+  "url": "https://www.youtube.com/watch?v=nmebL2L20IA",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "627431a818571f1d646ac840"
+  },
+  "ime": "Emir Đulović i Andreana Čekić - Cipele",
+  "url": "https://www.youtube.com/watch?v=tmV1ixGh_ps",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627431ca18571f1d646ac841"
+  },
+  "ime": "Maya - Džin i limunada",
+  "url": "https://www.youtube.com/watch?v=QuR8C7pKeQA",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6274325118571f1d646ac842"
+  },
+  "ime": "Nataša Bekvalac - Nikotin",
+  "url": "https://www.youtube.com/watch?v=hSv6jIda_eU",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "6274326018571f1d646ac843"
+  },
+  "ime": "Nataša Bekvalac - Ponovo",
+  "url": "https://www.youtube.com/watch?v=0BbWSedjHXM",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6274328018571f1d646ac844"
+  },
+  "ime": "Predrag Zivković Tozovac - Uzmi sve sto ti zivot pruza",
+  "url": "https://www.youtube.com/watch?v=7K4NLugJfjQ",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "627432a318571f1d646ac845"
+  },
+  "ime": "Seka Aleksić - Aspirin",
+  "url": "https://www.youtube.com/watch?v=gH0xuHo8x0g",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627432bb18571f1d646ac846"
+  },
+  "ime": "Sinan Sakić - Minut dva",
+  "url": "https://www.youtube.com/watch?v=U-31Sh5dfSQ",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627432e018571f1d646ac847"
+  },
+  "ime": "Tanja Savić - Tako mlada",
+  "url": "https://www.youtube.com/results?search_query=Tanja+Savi%C4%87+-+Tako+mlada",
+  "ocjena": 4
+}]

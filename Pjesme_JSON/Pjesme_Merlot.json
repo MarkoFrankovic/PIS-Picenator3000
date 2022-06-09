@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6274333c18571f1d646ac84a"
+  },
+  "ime": "Goran Dimitrijadis Dima - Nije Mene Dušo Ubilo",
+  "url": "https://www.youtube.com/watch?v=uKwIHeSJVHU",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "6275250c142562649ab718f1"
+  },
+  "ime": "Haris Džinović - Muštuluk",
+  "url": "https://www.youtube.com/watch?v=WcE8Rrzfeio",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "62752522142562649ab718f2"
+  },
+  "ime": "Lepa Brena - Hajde da se volimo",
+  "url": "https://www.youtube.com/watch?v=IcgwXSfJ7Bg",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "62752539142562649ab718f3"
+  },
+  "ime": "Miroslav ilić - Nije život jedna žena",
+  "url": "https://www.youtube.com/watch?v=OD0c_jRS8eY",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6275254f142562649ab718f4"
+  },
+  "ime": "Bane Bojanić - Pola vino pola voda",
+  "url": "https://www.youtube.com/results?search_query=Bane+Bojani%C4%87+-+Pola+vino+pola+voda",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "62752562142562649ab718f5"
+  },
+  "ime": "Sejo Pitić - Plava žena topla zima",
+  "url": "https://www.youtube.com/results?search_query=Sejo+Piti%C4%87+-+Plava+%C5%BEena+topla+zima",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6275257d142562649ab718f6"
+  },
+  "ime": "Mate Bulić - Ja još uvijek kao momak živim",
+  "url": "https://www.youtube.com/watch?v=XsrLc9tVAU0",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627525f6142562649ab718f7"
+  },
+  "ime": "Predrag Zivković Tozovac - Ti si me čekala",
+  "url": "https://www.youtube.com/watch?v=fIHvckCPCZw",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6275260a142562649ab718f8"
+  },
+  "ime": "Predrag Zivković Tozovac -  Prazna caša na mom stolu",
+  "url": "https://www.youtube.com/results?search_query=Predrag+Zivkovi%C4%87+Tozovac+-++Prazna+ca%C5%A1a+na+mom+stolu",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "62752627142562649ab718f9"
+  },
+  "ime": "Vlado Kalember - Vino na usnama",
+  "url": "https://www.youtube.com/watch?v=GzafZZM7oUU",
+  "ocjena": 3
+}]

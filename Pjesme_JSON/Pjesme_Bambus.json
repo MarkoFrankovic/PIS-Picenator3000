@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6273e95136692510361bbe18"
+  },
+  "ime": "O.K. Band - A U Medjuvremenu",
+  "url": "https://www.youtube.com/watch?v=RJS0pygxU4c",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6273eb7936692510361bbe1a"
+  },
+  "ime": "Halid Beslić - Miljacka",
+  "url": "https://www.youtube.com/watch?v=PlTBOzsABKU",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6273ebdd36692510361bbe1b"
+  },
+  "ime": "Halid Beslić - Prvi poljubac",
+  "url": "https://www.youtube.com/watch?v=ubtJB0v82a0",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6273ec0f36692510361bbe1c"
+  },
+  "ime": "Halid bešlic - Iznad tešnja",
+  "url": "https://www.youtube.com/watch?v=MfiboGVbwok",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6273ec2b36692510361bbe1d"
+  },
+  "ime": "Jana - Sta će ti pevačica",
+  "url": "https://www.youtube.com/watch?v=JwFI-iaWB_U",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6273ec4d36692510361bbe1e"
+  },
+  "ime": "Lepa Brena - Čik pogodi",
+  "url": "https://www.youtube.com/watch?v=46whejuS91Y",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6273ec6a36692510361bbe1f"
+  },
+  "ime": "Lepa Brena - Duge noge",
+  "url": "https://www.youtube.com/results?search_query=Lepa+Brena+-+Duge+noge",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6273ecae36692510361bbe21"
+  },
+  "ime": "Miroslav Ilić - Pozdravi je pozdravi",
+  "url": "https://www.youtube.com/watch?v=ly1fouub9mI&t=21s",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6273ecd736692510361bbe22"
+  },
+  "ime": "Miroslav ilić - Luckasta si ti",
+  "url": "https://www.youtube.com/watch?v=Z9qa7Wr3cwE",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6273ecf136692510361bbe23"
+  },
+  "ime": "Vesna Zmijanac - Kazni me kazni",
+  "url": "https://www.youtube.com/watch?v=hqf5bniwyFc",
+  "ocjena": 4
+}]

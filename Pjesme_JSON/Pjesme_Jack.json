@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6273e95136692510361bbe18"
+  },
+  "ime": "Buba Corelli - Gluh i Nijem",
+  "url": "https://www.youtube.com/watch?v=CIpR5DqUWS8",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6274333c18571f1d646ac84a"
+  },
+  "ime": "Buba Corelli - Irina Shayk",
+  "url": "https://www.youtube.com/results?search_query=Buba+Corelli+-+Irina+Shayk",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6274338118571f1d646ac84b"
+  },
+  "ime": "Buba Corelli ft Jala Brat x Coby - Divljam",
+  "url": "https://www.youtube.com/watch?v=mxgJSNfENt4",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "627433b018571f1d646ac84c"
+  },
+  "ime": "Connect feat Coby - Džek i Džoni",
+  "url": "https://www.youtube.com/watch?v=IEvZa_Kt6mk",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "627433ce18571f1d646ac84d"
+  },
+  "ime": "Devito x Teodora - Vudu",
+  "url": "https://www.youtube.com/watch?v=DjP8GKQnL88",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "6274340318571f1d646ac84e"
+  },
+  "ime": "Jala Brat & Buba Corelli - Klinka",
+  "url": "https://www.youtube.com/watch?v=xsHl08XSwsI",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6274341a18571f1d646ac84f"
+  },
+  "ime": "Jala Brat & Buba Corelli ft. Rasta - Benga po snijegu",
+  "url": "https://www.youtube.com/results?search_query=Jala+Brat+%26+Buba+Corelli+ft.+Rasta+-+Benga+po+snijegu",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6274343918571f1d646ac850"
+  },
+  "ime": "MC Stojan- La Miami",
+  "url": "https://www.youtube.com/watch?v=nuw6TLOEm7Q",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6274345e18571f1d646ac851"
+  },
+  "ime": "MC Sstojan X Hurricane - TuTuRuTu",
+  "url": "https://www.youtube.com/watch?v=aagHvZ8i-P4",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6274347e18571f1d646ac852"
+  },
+  "ime": "Teodora X MC Sstojan - Voli me Voli me",
+  "url": "https://www.youtube.com/results?search_query=Teodora+X+MC+Sstojan+-+Voli+me+Voli+me",
+  "ocjena": 5
+}]

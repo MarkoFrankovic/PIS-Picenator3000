@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6274333c18571f1d646ac84a"
+  },
+  "ime": "Ceca - Autogram",
+  "url": "https://www.youtube.com/results?search_query=Ceca+-+Autogram",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6275266c142562649ab718fb"
+  },
+  "ime": "Ceca - Da raskinem sa njom",
+  "url": "https://www.youtube.com/watch?v=o20g5Sac7U4",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "6275268d142562649ab718fc"
+  },
+  "ime": "Darko Lazić - Godinu dana 300 kafana",
+  "url": "https://www.youtube.com/watch?v=BRjZHSfiSPA",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627526ae142562649ab718fd"
+  },
+  "ime": "Djani - Ja stalno pijem",
+  "url": "https://www.youtube.com/watch?v=QTM3dSEDmpA",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "627526c9142562649ab718fe"
+  },
+  "ime": "Djani - Litar na litar",
+  "url": "https://www.youtube.com/watch?v=z4PyyIQpMz0",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627526e6142562649ab718ff"
+  },
+  "ime": "Dzej i Mina - Slavija",
+  "url": "https://www.youtube.com/watch?v=sIpECHUtVtI",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627526fd142562649ab71900"
+  },
+  "ime": "Haris Džinović - Pariške kapije",
+  "url": "https://www.youtube.com/watch?v=iJoUs_3iwB4",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "62752714142562649ab71901"
+  },
+  "ime": "Lepa Brena - Luda za tobom",
+  "url": "https://www.youtube.com/watch?v=Z1PHKbBxs5Y",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "62752730142562649ab71902"
+  },
+  "ime": "Mile Kitić - Plava ciganka",
+  "url": "https://www.youtube.com/watch?v=q4MmTHN40Q4",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "62752744142562649ab71903"
+  },
+  "ime": "Rada Manojlović - Mešaj mala",
+  "url": "https://www.youtube.com/watch?v=1bsK2A_weBk",
+  "ocjena": 5
+}]

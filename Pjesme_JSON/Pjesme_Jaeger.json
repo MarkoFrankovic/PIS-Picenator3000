@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6274333c18571f1d646ac84a"
+  },
+  "ime": "Bane Bojanić - Samo pijan mogu da prebolim",
+  "url": "https://www.youtube.com/results?search_query=Bane+Bojani%C4%87+-+Samo+pijan+mogu+da+prebolim",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "627434d218571f1d646ac854"
+  },
+  "ime": "Darko Lazic - Idi drugome",
+  "url": "https://www.youtube.com/watch?v=UJB5nVyzKIY",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627434ef18571f1d646ac855"
+  },
+  "ime": "Funky G - Kafana na Balkanu",
+  "url": "https://www.youtube.com/results?search_query=Funky+G+-+Kafana+na+Balkanu",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "627434fd18571f1d646ac856"
+  },
+  "ime": "Indira - Lopov",
+  "url": "https://www.youtube.com/watch?v=N8Ofb03-zEs",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6274353118571f1d646ac857"
+  },
+  "ime": "Jana - Barabar",
+  "url": "https://www.youtube.com/results?search_query=Jana+-+Barabar",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "6274357b18571f1d646ac858"
+  },
+  "ime": "Mile Kitić - Milioni kamioni",
+  "url": "https://www.youtube.com/watch?v=sw5CRbKsc2o",
+  "ocjena": 3
+},{
+  "_id": {
+    "$oid": "6274358f18571f1d646ac859"
+  },
+  "ime": "Milica Todorović - Uporedi me",
+  "url": "https://www.youtube.com/watch?v=wr21V2Ncb7E",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627435b018571f1d646ac85a"
+  },
+  "ime": "Sanja Djordjević - Poruci pesmu sa imenom mojim",
+  "url": "https://www.youtube.com/watch?v=sWAwQJsVfhQ",
+  "ocjena": 4
+},{
+  "_id": {
+    "$oid": "627435c718571f1d646ac85b"
+  },
+  "ime": "Sinan Sakić - Lepa do bola",
+  "url": "https://www.youtube.com/watch?v=ZT7ruP-Tzqk",
+  "ocjena": 5
+},{
+  "_id": {
+    "$oid": "627435e118571f1d646ac85c"
+  },
+  "ime": "Stoja - Bela ciganka",
+  "url": "https://www.youtube.com/watch?v=47IGs0LroYg",
+  "ocjena": 4
+}]
