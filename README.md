@@ -6,3 +6,4 @@ Ponuđeno je nekoliko alkoholnih pića. Pritiskom na jedan od njih pokreće se l
 #How to start
 
 1.create docker bridged network
+¨¨¨docker network create veza¨¨¨
