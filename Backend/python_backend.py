@@ -151,8 +151,6 @@ def dodavanje_komentara():
 def getanje_komentara():
         return jsonify(list(Komentari.find({},{ "_id": 0,"komentar":1, "ime": 1, "url": 1 , "pice": 1}).sort("pice",-1)))
 
-
-
 if __name__ == '__main__':
    app.run(host="0.0.0.0")
    
