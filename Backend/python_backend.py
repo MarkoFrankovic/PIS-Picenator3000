@@ -140,14 +140,12 @@ def delete_pjesme():
 
 #Upis komentara u databazu
 @app.route('/upis_komentara', methods=['POST'])
-def upis():
+def dodavanje_komentara():
    data = request.get_json()
    print(json_util.dumps(data))
    mydict = data
-   pice = data.pop("pice")
-   data["ocjena"] = int(data["ocjena"])
    Komentari.insert_one(data)
-  
+   return data
 
 
 if __name__ == '__main__':
