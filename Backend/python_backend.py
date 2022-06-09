@@ -136,8 +136,6 @@ def delete_pjesme():
       Merlot.delete_many(myquery)
    return data
 
-
-
 #Upis komentara u databazu
 @app.route('/upis_komentara', methods=['POST'])
 def dodavanje_komentara():
@@ -147,6 +145,7 @@ def dodavanje_komentara():
    Komentari.insert_one(data)
    return data
 
+#Read komentara
 @app.route('/getanje_komentara')
 def getanje_komentara():
         return jsonify(list(Komentari.find({},{ "_id": 0,"komentar":1, "ime": 1, "url": 1 , "pice": 1}).sort("pice",-1)))
