@@ -3,7 +3,9 @@ from flask_cors import CORS, cross_origin
 from flask_sqlalchemy import SQLAlchemy
 import bson.json_util as json_util
 from sqlalchemy import create_engine
+from models import *
 from sqlalchemy.orm import sessionmaker,declarative_base
+
 app = Flask(__name__)
 cors = CORS(app,resources = {r"/*":{"origins":"*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
@@ -93,7 +95,7 @@ class Stock(db.Model):
 @app.route('/getanje/<pice>', methods=['GET'])
 def fetch(pice):
     if pice == "bambus":
-            Bambus = db.get_all(Pjesme_Bambus)
+            Bambus = Bambus.query.all(Pjesme_Bambus)
             return Bambus.select().order_by(Bambus.ocjena.desc())
     elif pice == "jaeger":
             Jaeger = db.session.get_all(Pjesme_Jaeger)
