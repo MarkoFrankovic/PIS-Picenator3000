@@ -15,6 +15,14 @@ Ponuđeno je nekoliko alkoholnih pića. Pritiskom na jedan od njih pokreće se l
 
 ```docker run --name mongodb -p 27017:27017 --net veza -d mongo ```
 
-3.run mongodb with docker
+3.run flask with docker
 
 ```docker build . -f dockerfile.docker -t backend ```
+
+```docker run --name backend_pis -p 5000:5000 --net veza -d backend ```
+
+4.run
+
+```docker build . -f docker.dockerfile -t frontend ```
+
+```docker run --name frontend_pis -p 8080:8080 --net veza -d frontend  ```
