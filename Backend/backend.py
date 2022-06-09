@@ -10,7 +10,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['SQLALCHEMY_DATABAZE_URI'] = 'mysql:///Databaza.db'
 
 engine = create_engine(
-    'mysql+pymysql://user:password@host:3600/database',
+    'mysql+pymysql://root:password@host:3306/Databasa',
     echo=True
 )
 Session = sessionmaker(bind=engine)
@@ -25,28 +25,28 @@ def fetch(pice):
             return Bambus.select().order_by(Bambus.ocjena.desc())
     elif pice == "jaeger":
             Jaeger = db.get_all(Pjesme_Jaeger)
-            return Jaeger.select().order_by(Bambus.ocjena.desc())
+            return Jaeger.select().order_by(Jaeger.ocjena.desc())
     elif pice == "voda":
             Voda = db.get_all(Pjesme_Voda)
-            return Voda.select().order_by(Bambus.ocjena.desc())
+            return Voda.select().order_by(Voda.ocjena.desc())
     elif pice == "gin":
             Gin = db.get_all(Pjesme_Gin)
-            return Gin.select().order_by(Bambus.ocjena.desc())
+            return Gin.select().order_by(Gin.ocjena.desc())
     elif pice == "travarica":
             Travarica = db.get_all(Pjesme_Travarica)
-            return Travarica.select().order_by(Bambus.ocjena.desc())
+            return Travarica.select().order_by(Travarica.ocjena.desc())
     elif pice == "vodka":
             Vodka = db.get_all(Pjesme_Vodka)
-            return Vodka.select().order_by(Bambus.ocjena.desc())
+            return Vodka.select().order_by(Vodka.ocjena.desc())
     elif pice == "jack":
             Jack = db.get_all(Pjesme_Jack)
-            return Jack.select().order_by(Bambus.ocjena.desc())    
+            return Jack.select().order_by(Jack.ocjena.desc())    
     elif pice == "merlot":
             Merlot = db.get_all(Pjesme_Merlot)
-            return Merlot.select().order_by(Bambus.ocjena.desc())
+            return Merlot.select().order_by(Merlot.ocjena.desc())
     elif pice == "stock":
             Stock = db.get_all(Pjesme_Stock)
-            return Stock.select().order_by(Bambus.ocjena.desc())
+            return Stock.select().order_by(Stock.ocjena.desc())
 
 @app.route('/add', methods=['POST'])
 def add():
@@ -71,9 +71,6 @@ def edit(cat_id):
     new_price = data['price']
     database.edit_instance(Cats, id=cat_id, price=new_price)
     return json.dumps("Edited"), 200
-
-
-
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0")
