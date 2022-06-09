@@ -11,6 +11,7 @@ myclient = pymongo.MongoClient("localhost", 27017, maxPoolSize=50)
 
 #izbor databaze
 mydb = myclient["Pjesme"]
+mydb2 = myclient["Komentari_za_ocjenu"]
 
 #izbor kolekcija
 Jaeger = mydb["Pjesme_Jaeger"]
@@ -22,6 +23,8 @@ Vodka = mydb["Pjesme_Vodka"]
 Jack = mydb["Pjesme_Jack"]
 Merlot = mydb["Pjesme_Merlot"]
 Stock = mydb["Pjesme_Stock"]
+
+Komentari = mydb2["Komentari_za_ocjenu"]
 
 #READ CRUD
 @app.route('/getanje/<pice>')
@@ -45,7 +48,7 @@ def getanje(pice):
       elif pice == "stock":
          return jsonify(list(Stock.find({},{ "_id": 0, "ime": 1, "ocjena": 1 , "url": 1}).sort("ocjena",-1)))
 
-#ADD CRUD
+#CREATE CRUD
 @app.route('/upis', methods=['POST'])
 def upis():
    data = request.get_json()
@@ -132,6 +135,20 @@ def delete_pjesme():
    elif (pice == "Merlot"):
       Merlot.delete_many(myquery)
    return data
+
+
+
+#Upis komentara u databazu
+@app.route('/upis_komentara', methods=['POST'])
+def upis():
+   data = request.get_json()
+   print(json_util.dumps(data))
+   mydict = data
+   pice = data.pop("pice")
+   data["ocjena"] = int(data["ocjena"])
+   Komentari.insert_one(data)
+  
+
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0")
