@@ -9,12 +9,12 @@ cors = CORS(app,resources = {r"/*":{"origins":"*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['SQLALCHEMY_DATABAZE_URI'] = 'mysql:///Databaza.db'
 
-engine = create_engine(
-    'mysql+pymysql://root:password@host:3306/Databasa',
-    echo=True
-)
-Session = sessionmaker('mysql:///Databaza.db')
-session = Session()
+engine = create_engine('mysql+pymysql://root:password@host:3306/Databasa')
+Base = declarative_base()
+Base.metadata.bind = engine
+
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
 
 db = sqlalchemy(app)
 
@@ -68,9 +68,26 @@ def remove(cat_id):
 @app.route('/edit/<cat_id>', methods=['PATCH'])
 def edit(cat_id):
     data = request.get_json()
-    new_price = data['price']
-    database.edit_instance(Cats, id=cat_id, price=new_price)
-    return json.dumps("Edited"), 200
+    if (pice == "Bambus"):
+      Bambus.update_many(myquery, newvalues)
+    elif (pice == "Jaeger"):
+      Jaeger.update_many(myquery, newvalues)
+    elif (pice == "Voda"):
+      Voda.update_many(myquery, newvalues)
+    elif (pice == "Vodka"):
+      Vodka.update_many(myquery, newvalues)
+    elif (pice == "Stock"):
+      Stock.update_many(myquery, newvalues)
+    elif (pice == "Gin"):
+      Gin.update_many(myquery, newvalues)
+    elif (pice == "Travarica"):
+      Travarica.update_many(myquery, newvalues)
+    elif (pice == "Jack"):
+      Jack.update_many(myquery, newvalues)
+    elif (pice == "Merlot"):
+      Merlot.update_many(myquery, newvalues)
+    
+    
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0")
